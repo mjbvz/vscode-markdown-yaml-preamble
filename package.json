@@ -1,0 +1,43 @@
+{
+  "name": "markdown-yaml-preamble",
+  "private": true,
+  "version": "0.0.1",
+  "displayName": "Markdown yaml Preamble",
+  "description": "Adds rendering yaml frontmatter as at table in the built-in markdown preview",
+  "keywords": [
+    "markdown",
+    "yaml",
+    "github",
+    "table"
+  ],
+  "icon": "logo/logox128.png",
+  "publisher": "bierner",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/mjbvz/vscode-markdown-yaml-preamble.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjbvz/vscode-markdown-yaml-preamble/issues"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "markdown.markdownItPlugins": true
+  },
+  "main": "./index.js",
+  "scripts": {
+    "vscode:prepublish": "",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "vscode": "^1.0.0"
+  },
+  "dependencies": {
+    "markdown-it-github-preamble": "^1.0.0"
+  }
+}
