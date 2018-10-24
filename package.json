@@ -1,12 +1,13 @@
 {
   "name": "markdown-yaml-preamble",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Markdown yaml Preamble",
-  "description": "Adds rendering yaml frontmatter as at table in the built-in markdown preview",
+  "description": "Renders yaml front matter as a table in the built-in markdown preview",
   "keywords": [
     "markdown",
     "yaml",
+    "frontmatter",
     "github",
     "table"
   ],
