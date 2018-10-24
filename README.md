@@ -2,7 +2,7 @@
 
 Makes yaml front matter render as a table in VS Code's built-in markdown preview:
 
-![](https://raw.githubusercontent.com/mjbvz/vscode-markdown-yaml-premable/master/docs/example.png)
+![](https://raw.githubusercontent.com/mjbvz/vscode-markdown-yaml-preamble/master/docs/example.png)
 
 
 > ❗️ **Important**: To see the yaml front matter, you must set:
