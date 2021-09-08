@@ -21,7 +21,7 @@
     "url": "https://github.com/mjbvz/vscode-markdown-yaml-preamble/issues"
   },
   "engines": {
-    "vscode": "^1.15.0"
+    "vscode": "^1.59.0"
   },
   "categories": [
     "Other"
@@ -30,9 +30,24 @@
   "contributes": {
     "markdown.markdownItPlugins": true
   },
-  "main": "./index.js",
+  "main": "./dist/index.js",
+  "browser": "./dist/web/index.js",
+  "scripts": {
+    "watch": "webpack --watch --config ./build/webpack.config.js",
+    "package": "webpack --mode production --config ./build/webpack.config.js",
+    "lint": "eslint -c .eslintrc.js --ext .ts src",
+    "vscode:prepublish": "npm run package ; npm run package-web",
+    "watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js",
+    "package-web": "webpack --mode production --devtool hidden-source-map --config ./build/web-extension.webpack.config.js"
+  },
   "devDependencies": {
-    "@types/vscode": "^1.33"
+    "@types/markdown-it": "^12.0.1",
+    "@types/vscode": "^1.59.0",
+    "buffer": "^6.0.3",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
   },
   "dependencies": {
     "markdown-it-github-preamble": "^1.0.0"
