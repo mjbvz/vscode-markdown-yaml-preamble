@@ -7,7 +7,7 @@
 - Remove `extensionKind`. No longer required.
 
 ## 0.0.3 - April 18, 2019
-- Set explicit `extensionKind` for VS Code compatability.
+- Set explicit `extensionKind` for VS Code compatibility.
 
 ## 0.0.2 - October 24, 2018
 - Fix some package metadata
