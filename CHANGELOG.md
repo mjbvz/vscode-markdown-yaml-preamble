@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.1.0 - September 8, 2021
+- Add support for running in browsers.
+
 ## 0.0.4 - April 23, 2019
 - Remove `extensionKind`. No longer required.
 
